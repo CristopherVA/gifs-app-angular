@@ -1,1 +1,11 @@
-<p>card works!</p>
+<div class="card mb-2 text-center bg-dark text-center  animate__animated animate__fadeInTopLeft ">
+
+  <shared-lazy-image [url]="gif.images.downsized_medium.url" [alt]="gif.title || ' No title'"></shared-lazy-image>
+
+  <!-- TODO: Crear imagen -->
+  <!-- <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-img-top"> -->
+  <div class="card-body text-white">
+    <p class="text-center">{{gif.title || 'No title'}}</p>
+  </div>
+
+</div>

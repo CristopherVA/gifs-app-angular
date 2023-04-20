@@ -8,7 +8,7 @@ export class GifsService {
   public gifsList: Gif[] = []
 
   private _tagsHistory: string[] = []
-  private apikey: string = 'LhffK7eDk6HadqEQiIFy6aemtb2W17Oa'
+  private apikey: string = 'LhffK7eDk6HadqEQiIFy6aemtb2W17Oa' // YOUR API KEY GIFT APP THIS API_KEY WAS DELETED
   private serviceUrl: string = 'https://api.giphy.com/v1/gifs'
 
   constructor(private http: HttpClient) {
@@ -29,7 +29,7 @@ export class GifsService {
     this._tagsHistory = JSON.parse(localStorage.getItem('history')!)
 
     if (this._tagsHistory.length === 0) return;
-    
+
     this.searchTag(this._tagsHistory[0])
 
   }
